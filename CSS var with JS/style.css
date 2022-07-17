@@ -1,0 +1,44 @@
+:root{
+    --base: #333333;
+    --spacing: 0px;
+    --blur: 0px;
+}
+*{
+    font-family: 'Fira Code', monospace;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: wheat;
+}
+
+.heading{
+    font-size: 3rem;
+    padding: 1.5rem;
+    text-align: center;
+    margin: 1rem;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    gap: 0.1rem;
+}
+
+.container,.space,.blur,.color{
+    flex-direction: column;  
+     
+}
+.inputs{
+    gap:2rem;
+}
+
+
+img{
+    margin-top: 1.5rem;
+    padding: var(--spacing);
+    background: var(--base);
+    filter: blur(var(--blur));
+}
