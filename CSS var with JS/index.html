@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picture</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header class="heading">
+        Change CSS Variables with JS
+    </header>
+
+    <main class="container flex">
+        <div class="inputs flex">
+            <div class="space flex">
+                <p>Space</p>
+                <input type="range" name="spacing" class="spacing" min="0" max="40" value="0" data-sizing="px" oninput="this.nextElementSibling.value = this.value">
+                <output>0</output>
+            </div>
+            <div class="blur flex">
+                <p>Blur</p>
+                <input type="range" name="blur" class="bluring" min="0" max="10" value="0" data-sizing="px" oninput="this.nextElementSibling.value=this.value">
+                <output>0</output>
+            </div>
+            <div class="color flex">
+                <p>Color</p>
+                <input type="color" name="base" class="coloring" value="#333333">
+            </div>
+        </div>
+        <img src="src/pic.jpg" alt="picture of sea" id="pic">
+    </main>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
